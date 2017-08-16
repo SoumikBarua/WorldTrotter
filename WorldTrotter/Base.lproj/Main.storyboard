@@ -21,12 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qc9-mp-XEO">
-                                <rect key="frame" x="132" y="28" width="111" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqb-DX-ABR">
                                 <rect key="frame" x="35" y="120" width="306" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
@@ -51,19 +45,28 @@
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVP-x7-kxR">
+                                <rect key="frame" x="62.5" y="28" width="250" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="1iE-1e-vwZ"/>
+                                </constraints>
+                                <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Qc9-mp-XEO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="1LM-fS-ii0"/>
                             <constraint firstItem="f1p-Ue-NP5" firstAttribute="top" secondItem="kAJ-eG-NV6" secondAttribute="bottom" constant="8" id="6RB-Qg-001"/>
-                            <constraint firstItem="Qc9-mp-XEO" firstAttribute="centerX" secondItem="jqb-DX-ABR" secondAttribute="centerX" id="8Wm-lj-3Jj"/>
-                            <constraint firstItem="jqb-DX-ABR" firstAttribute="top" secondItem="Qc9-mp-XEO" secondAttribute="bottom" constant="8" id="9Mq-Lz-iXt"/>
                             <constraint firstItem="kAJ-eG-NV6" firstAttribute="top" secondItem="hAK-oM-D5L" secondAttribute="bottom" constant="8" id="9mJ-Bn-Eut"/>
                             <constraint firstItem="hAK-oM-D5L" firstAttribute="top" secondItem="jqb-DX-ABR" secondAttribute="bottom" constant="8" id="EmX-X6-hKB"/>
                             <constraint firstItem="f1p-Ue-NP5" firstAttribute="centerX" secondItem="jqb-DX-ABR" secondAttribute="centerX" id="JQP-VI-qK3"/>
-                            <constraint firstItem="Qc9-mp-XEO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Shf-kH-UDL"/>
+                            <constraint firstItem="vVP-x7-kxR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T0U-DB-elz"/>
+                            <constraint firstItem="jqb-DX-ABR" firstAttribute="top" secondItem="vVP-x7-kxR" secondAttribute="bottom" constant="8" id="XIs-Xb-lLC"/>
                             <constraint firstItem="kAJ-eG-NV6" firstAttribute="centerX" secondItem="jqb-DX-ABR" secondAttribute="centerX" id="ghd-Qn-zZf"/>
+                            <constraint firstItem="vVP-x7-kxR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="o3c-eT-now"/>
                             <constraint firstItem="hAK-oM-D5L" firstAttribute="centerX" secondItem="jqb-DX-ABR" secondAttribute="centerX" id="sBq-I7-FpC"/>
+                            <constraint firstItem="jqb-DX-ABR" firstAttribute="centerX" secondItem="vVP-x7-kxR" secondAttribute="centerX" id="vrn-yh-YuR"/>
                         </constraints>
                     </view>
                 </viewController>
