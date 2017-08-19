@@ -15,6 +15,7 @@
 		3243E47B1F437BB5002444EF /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3243E47A1F437BB5002444EF /* WorldTrotterUITests.swift */; };
 		3271D4A11F451102007E2DAE /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3271D4A01F451102007E2DAE /* ConversionViewController.swift */; };
 		3271D4A41F468D3A007E2DAE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3271D4A31F468D3A007E2DAE /* MapKit.framework */; };
+		3271D4A61F47798C007E2DAE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3271D4A51F47798C007E2DAE /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3243E47C1F437BB5002444EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3271D4A01F451102007E2DAE /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversionViewController.swift; path = ../ConversionViewController.swift; sourceTree = "<group>"; };
 		3271D4A31F468D3A007E2DAE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3271D4A51F47798C007E2DAE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				3243E45A1F437BB4002444EF /* AppDelegate.swift */,
 				3271D4A01F451102007E2DAE /* ConversionViewController.swift */,
 				3243E45E1F437BB4002444EF /* Main.storyboard */,
+				3271D4A51F47798C007E2DAE /* MapViewController.swift */,
 				3243E4611F437BB4002444EF /* Assets.xcassets */,
 				3243E4631F437BB4002444EF /* LaunchScreen.storyboard */,
 				3243E4661F437BB4002444EF /* Info.plist */,
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3271D4A11F451102007E2DAE /* ConversionViewController.swift in Sources */,
+				3271D4A61F47798C007E2DAE /* MapViewController.swift in Sources */,
 				3243E45B1F437BB4002444EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
