@@ -13,7 +13,7 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var celciusLabel: UILabel!
     @IBOutlet var fahrenheitTextField: UITextField!
     
-    var colorOption = 0
+    var colorsIndex = 0
     
     var fahrenheitValue: Measurement<UnitTemperature>?{
         didSet{
@@ -92,12 +92,36 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if colorOption == 0{
-            view.backgroundColor = UIColor(red:0.00, green:0.26, blue:0.26, alpha:1.0)
-            colorOption = 1
+        //let lightColor1 = UIColor(red:0.96, green:0.96, blue:0.96, alpha:1.0)
+        let lightColor1 = UIColor(red:0.94, green:0.92, blue:0.85, alpha:1.0)
+        let lightColor2 = UIColor(red:0.91, green:0.94, blue:0.85, alpha:1.0)
+        let lightColor3 = UIColor(red:0.94, green:0.88, blue:0.85, alpha:1.0)
+        
+        
+        let darkColor1 = UIColor(red:0.00, green:0.26, blue:0.26, alpha:1.0)
+        let darkColor2 = UIColor(red:0.00, green:0.13, blue:0.26, alpha:1.0)
+        let darkColor3 = UIColor(red:0.00, green:0.26, blue:0.13, alpha:1.0)
+        
+        let lightColors = [lightColor1, lightColor2, lightColor3]
+        let darkColors = [darkColor1, darkColor2, darkColor3]
+        
+        let currentHour = Calendar.current.component(.hour, from: Date())
+        let currentMinute = Calendar.current.component(.minute, from: Date())
+        print("Current hour is \(currentHour)")
+        print("Current minute is \(currentMinute)")
+        
+        if currentHour>18 {
+            view.backgroundColor = darkColors[colorsIndex]
+        } else if currentHour==18 && currentMinute>=30{
+            view.backgroundColor = darkColors[colorsIndex]
         } else {
-            view.backgroundColor = UIColor(red:0.96, green:0.96, blue:0.95, alpha:1.0)
-            colorOption = 0
+            view.backgroundColor = lightColors[colorsIndex]
+        }
+        
+        if colorsIndex == 2 {
+            colorsIndex = 0
+        } else {
+            colorsIndex += 1
         }
     }
 

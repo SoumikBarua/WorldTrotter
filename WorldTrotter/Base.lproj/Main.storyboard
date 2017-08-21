@@ -90,21 +90,17 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-34" y="581"/>
+            <point key="canvasLocation" x="-244" y="581"/>
         </scene>
         <!--Map-->
         <scene sceneID="ZST-t5-jaz">
             <objects>
                 <viewController id="IY9-sx-0qC" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="8FV-dn-s58">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="9WU-PO-hwM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bn0-XM-iNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.8" y="42.728635682158924"/>
+            <point key="canvasLocation" x="375" y="581"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Gb3-GG-jaY">
