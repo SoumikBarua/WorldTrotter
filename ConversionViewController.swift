@@ -105,17 +105,29 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         let lightColors = [lightColor1, lightColor2, lightColor3]
         let darkColors = [darkColor1, darkColor2, darkColor3]
         
-        let currentHour = Calendar.current.component(.hour, from: Date())
-        let currentMinute = Calendar.current.component(.minute, from: Date())
+        let date = Date()
+        let currentHour = Calendar.current.component(.hour, from: date)
+        let currentMinute = Calendar.current.component(.minute, from: date)
+        let currentDay = Calendar.current.component(.day, from: date)
+        let currentMonth = Calendar.current.component(.month, from: date)
+        let currentYear = Calendar.current.component(.year, from: date)
+        
         print("Current hour is \(currentHour)")
         print("Current minute is \(currentMinute)")
+        print("Current day is \(currentDay)")
+
+        var testComponents = DateComponents()
+        testComponents.year = currentYear
+        testComponents.month = currentMonth
+        testComponents.day = currentDay
+        testComponents.hour = 18
+        testComponents.minute = 30
+        let testDate = Calendar.current.date(from: testComponents)
         
-        if currentHour>18 {
-            view.backgroundColor = darkColors[colorsIndex]
-        } else if currentHour==18 && currentMinute>=30{
-            view.backgroundColor = darkColors[colorsIndex]
-        } else {
+        if date.compare(testDate!) == .orderedAscending {
             view.backgroundColor = lightColors[colorsIndex]
+        } else {
+            view.backgroundColor = darkColors[colorsIndex]
         }
         
         if colorsIndex == 2 {
