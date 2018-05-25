@@ -16,6 +16,7 @@
 		3271D4A11F451102007E2DAE /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3271D4A01F451102007E2DAE /* ConversionViewController.swift */; };
 		3271D4A41F468D3A007E2DAE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3271D4A31F468D3A007E2DAE /* MapKit.framework */; };
 		3271D4A61F47798C007E2DAE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3271D4A51F47798C007E2DAE /* MapViewController.swift */; };
+		3276C1A420B8CE1F007DB919 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276C1A320B8CE1F007DB919 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3271D4A01F451102007E2DAE /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversionViewController.swift; path = ../ConversionViewController.swift; sourceTree = "<group>"; };
 		3271D4A31F468D3A007E2DAE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3271D4A51F47798C007E2DAE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3276C1A320B8CE1F007DB919 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3243E45A1F437BB4002444EF /* AppDelegate.swift */,
 				3271D4A01F451102007E2DAE /* ConversionViewController.swift */,
 				3243E45E1F437BB4002444EF /* Main.storyboard */,
+				3276C1A320B8CE1F007DB919 /* WebViewController.swift */,
 				3271D4A51F47798C007E2DAE /* MapViewController.swift */,
 				3243E4611F437BB4002444EF /* Assets.xcassets */,
 				3243E4631F437BB4002444EF /* LaunchScreen.storyboard */,
@@ -208,6 +211,7 @@
 				TargetAttributes = {
 					3243E4561F437BB4002444EF = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 82PESEA6HC;
 						ProvisioningStyle = Automatic;
 					};
 					3243E46A1F437BB5002444EF = {
@@ -277,6 +281,7 @@
 				3271D4A11F451102007E2DAE /* ConversionViewController.swift in Sources */,
 				3271D4A61F47798C007E2DAE /* MapViewController.swift in Sources */,
 				3243E45B1F437BB4002444EF /* AppDelegate.swift in Sources */,
+				3276C1A420B8CE1F007DB919 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +435,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 82PESEA6HC;
 				INFOPLIST_FILE = WorldTrotter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sb.WorldTrotter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,7 +449,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 82PESEA6HC;
 				INFOPLIST_FILE = WorldTrotter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sb.WorldTrotter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
