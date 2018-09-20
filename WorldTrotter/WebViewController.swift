@@ -14,10 +14,8 @@ class WebViewController: UIViewController, WKUIDelegate {
     var webView: WKWebView!
     
     override func loadView() {
-        let webConfiguration = WKWebViewConfiguration()
         // Create a web view
-        webView = WKWebView(frame: .zero, configuration: webConfiguration)
-        webView.uiDelegate = self
+        webView = WKWebView()
         
         // Set it as *the* view of this view controller
         view = webView
