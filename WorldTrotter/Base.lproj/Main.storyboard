@@ -39,8 +39,8 @@
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celcius" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1p-Ue-NP5">
-                                <rect key="frame" x="64.5" y="314" width="247" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1p-Ue-NP5">
+                                <rect key="frame" x="64.5" y="314" width="245.5" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -87,7 +87,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" id="gBS-30-KxR"/>
                     <connections>
-                        <outlet property="celciusLabel" destination="kAJ-eG-NV6" id="aSo-rQ-7qJ"/>
+                        <outlet property="celsiusLabel" destination="kAJ-eG-NV6" id="qfV-21-rz0"/>
                         <outlet property="fahrenheitTextField" destination="vVP-x7-kxR" id="9TP-uH-Xng"/>
                     </connections>
                 </viewController>

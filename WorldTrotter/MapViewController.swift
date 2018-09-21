@@ -26,7 +26,12 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         mapView.delegate = self
         locationManager = CLLocationManager()
         
-        let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
+        //let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
+        let standardString = NSLocalizedString("Standard", comment: "Standard map view")
+        let satelliteString = NSLocalizedString("Satellite", comment: "Satellite map view")
+        let hybridString = NSLocalizedString("Hybrid", comment: "Hybrid map view")
+        
+        let segmentedControl = UISegmentedControl(items: [standardString, satelliteString, hybridString])
         segmentedControl.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         segmentedControl.selectedSegmentIndex = 0
         
@@ -37,7 +42,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         // Button for displaying and zooming in on the user's current location
         let locationButton = UIButton()
-        locationButton.setTitle("Tap for location", for: .normal)
+        let tapForLocationString = NSLocalizedString("Tap for location", comment: "Shows and zooms in on location")
+        locationButton.setTitle(tapForLocationString, for: .normal)
         locationButton.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 15)
         locationButton.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         locationButton.setTitleColor(UIColor.black, for: .normal)
@@ -76,9 +82,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         case 0:
             mapView.mapType = .standard
         case 1:
-            mapView.mapType = .hybrid
-        case 2:
             mapView.mapType = .satellite
+        case 2:
+            mapView.mapType = .hybrid
         default:
             break
         }

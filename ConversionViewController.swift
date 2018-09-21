@@ -10,17 +10,17 @@ import UIKit
 
 class ConversionViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet var celciusLabel: UILabel!
+    @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var fahrenheitTextField: UITextField!
     
     var colorsIndex = 0
     
     var fahrenheitValue: Measurement<UnitTemperature>?{
         didSet{
-            updateCelciusLabel()
+            updatecelsiusLabel()
         }
     }
-    var celciusValue: Measurement<UnitTemperature>? {
+    var celsiusValue: Measurement<UnitTemperature>? {
         if let fahrenheitValue = fahrenheitValue {
             return fahrenheitValue.converted(to: .celsius)
         } else {
@@ -28,19 +28,19 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func updateCelciusLabel(){
-        if let celciusValue = celciusValue {
-            celciusLabel.text = numberFormatter.string(from: NSNumber(value: celciusValue.value))
+    func updatecelsiusLabel(){
+        if let celsiusValue = celsiusValue {
+            celsiusLabel.text = numberFormatter.string(from: NSNumber(value: celsiusValue.value))
         } else {
-            celciusLabel.text = "???"
+            celsiusLabel.text = "???"
         }
     }
     
     @IBAction func fahrenheitFieldEditingChanged(_ textField: UITextField) {
         //if let text = textField.text, !text.isEmpty {
-        //    celciusLabel.text = textField.text
+        //    celsiusLabel.text = textField.text
         //} else {
-        //    celciusLabel.text = "???"
+        //    celsiusLabel.text = "???"
         //}
         //if let text = textField.text, let value = Double(text) {
         if let text = textField.text, let number = numberFormatter.number(from: text) {
@@ -58,7 +58,7 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updateCelciusLabel()
+        updatecelsiusLabel()
         
         print("ConversionViewController loaded its view.")
     }
