@@ -77,7 +77,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         print("MapViewController loaded its view.")
     }
     
-    func mapTypeChanged(_ segControl: UISegmentedControl){
+    @objc func mapTypeChanged(_ segControl: UISegmentedControl){
         switch segControl.selectedSegmentIndex{
         case 0:
             mapView.mapType = .standard
@@ -90,14 +90,14 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
-    func showLocation(_ sender: UIButton) {
+    @objc func showLocation(_ sender: UIButton) {
         print("Came to showLocation func")
         locationManager.requestWhenInUseAuthorization()
         mapView.showsUserLocation = true
     }
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        let zoomedLocation = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 500, 500)
+        let zoomedLocation = MKCoordinateRegion.init(center: userLocation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
         mapView.setRegion(zoomedLocation, animated: true)
     }
 }
