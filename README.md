@@ -1,15 +1,16 @@
 # WorldTrotter
 
-This is a simple application that converts temperature value from degrees Fahrenheit to degrees Celsius along with a map view and a web view and provides Spanish and Korean language and region support.
+This is a simple iOS app that converts temperature value from degrees Fahrenheit to degrees Celsius along with a map view and a web view in a tab bar setup and provides Spanish and Korean language and region support.
 
 ## Getting Started
 
-This project was created to gain a better understanding of views and the view hierarchy, and how views are laid out using **Auto Layout**. The project also explores **internationalization** and **localization**.
+This project was created to gain a better understanding of views and the view hierarchy, and how views are laid out using **Auto Layout** and to learn about **UITabBarController**. The project also explores *internationalization* and *localization*.
 
 ## App Walkthrough GIF
 
 This GIF shows the app in action (preventing multiple decimal separators, the background color in the conversion view changes in each visit, the decimal separator sign changes from a period to a comma for the Spain region selection, the language changes for Spanish selection in both the conversion view and the map view, and the language changes again for Korean selection and the decimal separator changes for the South Korea region selection)
 
+NOTE: the "Press for Location" button in the map view is for zooming in on the user's location when the app is running on an actual device and the user has granted location permission!
 ![WorldTrotter Walkthrough](walkthrough.gif)
 
 ## Lessons Learned
