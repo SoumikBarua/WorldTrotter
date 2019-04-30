@@ -8,6 +8,8 @@ This project was created to gain a better understanding of views and the view hi
 
 ## App Walkthrough GIF
 
+This GIF shows the app in action (preventing multiple decimal separators, the background color in the conversion view changes in each visit, the decimal separator sign changes from a period to a comma for the Spain region selection, the language changes for Spanish selection in both the conversion view and the map view, and the language changes again for Korean selection and the decimal separator changes for the South Korea region selection)
+
 ![WorldTrotter Walkthrough](walkthrough.gif)
 
 ## Lessons Learned
