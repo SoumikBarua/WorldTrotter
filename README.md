@@ -10,7 +10,7 @@ This project was created to gain a better understanding of views and the view hi
 
 This GIF shows the app in action (preventing multiple decimal separators, the background color in the conversion view changes in each visit, the decimal separator sign changes from a period to a comma for the Spain region selection, the language changes for Spanish selection in both the conversion view and the map view, and the language changes again for Korean selection and the decimal separator changes for the South Korea region selection)
 
-NOTE: the "Press for Location" button in the map view is for zooming in on the user's location when the app is running on an actual device and the user has granted location permission!
+NOTE: the "Tap for Location" button in the map view is for zooming in on the user's location when the app is running on an actual device and the user has granted location permission!
 
 ![WorldTrotter Walkthrough](walkthrough.gif)
 
