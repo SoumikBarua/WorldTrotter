@@ -1,4 +1,4 @@
-# WorldTrotter iOS Application
+# WorldTrotter
 
 This is a simple application that converts temperature value from degrees Fahrenheit to degrees Celsius along with a map view and a web view and provides Spanish and Korean language and region support.
 
