@@ -4,7 +4,7 @@ This is a simple iOS app that converts temperature value from degrees Fahrenheit
 
 ## Getting Started
 
-This project was created to gain a better understanding of views and the view hierarchy, and how views are laid out using **Auto Layout** and to learn about **UITabBarController** and **UISegmentedControl**. The project also explores *internationalization* and *localization*.
+This project was created to gain a better understanding of views and the view hierarchy, and how views are laid out using **Auto Layout** and to learn about **UITabBarController** and **UISegmentedControl**. The project also explores *Localizable Strings*, *string tables* and **NSLocalizedStrings** for *internationalization* and *localization*.
 
 ## App Walkthrough GIF
 
